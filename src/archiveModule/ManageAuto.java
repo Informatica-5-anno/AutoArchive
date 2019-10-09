@@ -49,14 +49,16 @@ public class ManageAuto {
 	}
 	
 	
-	public void addAuto(Auto a) {
+	public int addAuto(Auto a) {
 		
 		if (mindex.get(a.getTarga())!=null) {
 			System.out.println("Targa gia presente");
+			return 1;
 		} else {
 			writeAuto(mindex, a,fauto);
 		}
 		indexWrite(FileIndice);
+		return 0;
 	}
 		
 		

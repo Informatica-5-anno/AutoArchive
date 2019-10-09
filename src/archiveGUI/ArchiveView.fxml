@@ -44,7 +44,7 @@
                         <Insets left="5.0" top="5.0" />
                      </HBox.margin>
                   </Label>
-                  <TextArea fx:id="txtDescrizione" prefHeight="94.0" prefWidth="348.0" wrapText="true">
+                  <TextArea fx:id="txtDescrizione" editable="false" prefHeight="94.0" prefWidth="348.0" wrapText="true">
                      <HBox.margin>
                         <Insets left="5.0" top="5.0" />
                      </HBox.margin>
@@ -61,7 +61,7 @@
                         <Insets left="5.0" top="5.0" />
                      </HBox.margin>
                   </Label>
-                  <TextField fx:id="txtKM" prefHeight="26.0" prefWidth="77.0">
+                  <TextField fx:id="txtKM" editable="false" prefHeight="26.0" prefWidth="77.0">
                      <HBox.margin>
                         <Insets left="5.0" right="10.0" />
                      </HBox.margin>
@@ -71,7 +71,7 @@
                         <Insets top="5.0" />
                      </HBox.margin>
                   </Label>
-                  <TextField fx:id="txtAnno" prefHeight="26.0" prefWidth="70.0">
+                  <TextField fx:id="txtAnno" editable="false" prefHeight="26.0" prefWidth="70.0">
                      <HBox.margin>
                         <Insets left="5.0" right="10.0" />
                      </HBox.margin>
@@ -81,7 +81,7 @@
                         <Insets top="5.0" />
                      </HBox.margin>
                   </Label>
-                  <TextField fx:id="txtPrezzo">
+                  <TextField fx:id="txtPrezzo" editable="false">
                      <HBox.margin>
                         <Insets left="5.0" right="5.0" />
                      </HBox.margin>
@@ -93,17 +93,17 @@
             </HBox>
             <HBox>
                <children>
-                  <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#onSearch" text="Search">
+                  <Button fx:id="btnSearch" disable="true" mnemonicParsing="false" onAction="#onSearch" text="Search">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="btnModify" mnemonicParsing="false" onAction="#onModify" text="Modify">
+                  <Button fx:id="btnModify" disable="true" mnemonicParsing="false" onAction="#onModify" text="Modify">
                      <HBox.margin>
                         <Insets left="30.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#onDelete" text="Delete">
+                  <Button fx:id="btnDelete" disable="true" mnemonicParsing="false" onAction="#onDelete" text="Delete">
                      <HBox.margin>
                         <Insets left="30.0" />
                      </HBox.margin>
@@ -122,6 +122,6 @@
       </VBox>
    </center>
    <bottom>
-      <TextField editable="false" BorderPane.alignment="CENTER" />
+      <TextField fx:id="txtStatus" editable="false" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>
